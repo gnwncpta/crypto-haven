@@ -1,2 +1,2 @@
-# crypto-haven
+# Crypto Haven
 A Web Fetch Crypto's Price
