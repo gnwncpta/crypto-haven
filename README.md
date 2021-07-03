@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/vkUfAYR.png" width="100px">
+<img src="https://i.imgur.com/vkUfAYR.png" width="150px">
 
 # Crypto Haven
 A Web Fetch Crypto's Price
