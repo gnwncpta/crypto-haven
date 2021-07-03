@@ -3,7 +3,7 @@ import anime from "animejs/lib/anime.es.js";
 const logo = document.querySelector('header img');
 const disclaimer = document.querySelector('#disc');
 const blackScreen = document.querySelector('.black');
-const getStartedHome = document.querySelector('button.get-started');
+const getStartedBtn = document.querySelector('button.get-started');
 
 function Home(){
 
@@ -28,10 +28,11 @@ function Home(){
         }
     });
 
-    getStartedHome.addEventListener('mouseover', () => {
+    getStartedBtn.addEventListener('mouseenter', () => {
         anime({
             target: getStartedHome,
             translateY: '100px',
+            direction: 'alternate',
             easing: 'easeInOutExpo'
         });
     });
