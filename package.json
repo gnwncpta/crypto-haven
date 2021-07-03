@@ -4,7 +4,7 @@
   "description": "A Web Fetch Crypto's Price",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/gnwncpta/crypto-haven#readme",
   "devDependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^3.0.0",
     "webpack": "^5.42.0",
     "webpack-cli": "^4.7.2"
   }
