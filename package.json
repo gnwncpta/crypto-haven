@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gnwncpta/crypto-haven#readme",
   "devDependencies": {
+    "animejs": "^3.2.1",
     "css-loader": "^5.2.6",
     "style-loader": "^3.0.0",
     "webpack": "^5.42.0",
