@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --main-bg: #212121;
+    --secondary-bg: #2C2C2C;
+    --white-45: rgba(255, 255, 255, .45);
+    --font-medium: 500;
+    --font-light: 200;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.freeze {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.black {
+    background-color: black;
+    opacity: .6;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+section#disclaimer {
+    z-index: 10;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    background-color: white;
+    color: #111;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+section#disclaimer h1 {
+    font-size: 30px;
+}
+
+section#disclaimer p {
+    margin-top: 20px;
+}
+
+section#disclaimer button {
+    cursor: pointer;
+    color: white;
+    margin-top: 70px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 13px;
+    background-color: #111;
+    transition: .1s ease-in-out;
+}
+
+section#disclaimer button:hover {
+    background-color: white;
+    color: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+main {
+    overflow-x: hidden
+}
+
+section#first-look {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+section#first-look .ornament-first-look { /* ornament */
+    width: 1075px;
+    height: 880px;
+    position: absolute;
+    top: 180px;
+    left: -160px;
+    z-index: -1;
+    background: url('../assets/ornament-left-side.svg');
+}
+
+section#first-look .ornament-kanan {
+    width: 418px;
+    height: 407px;
+    position: absolute;
+    bottom: -130px;
+    right: -20px;
+    z-index: -1;
+    background: url('../assets/ornament-kanan.svg');
+}
+
+header {
+    padding: 52px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    cursor: pointer;
+}
+
+header nav a.active {
+    color: black;
+    background-color: var(--white);
+    border-radius: 50px;
+}
+
+header nav a {
+    margin: 0 20px;
+    padding: 11px 25px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-weight: (--font-medium);
+}
+
+section.landing {
+    margin-top: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.landing #typography h1 {
+    color: var(--white);
+    font-size: 80px;
+    margin-bottom: 35px;
+}
+
+section.landing #typography p {
+    color: var(--white-45);
+}
+
+section.landing #typography .buttons {
+    margin-top: 50px;
+    display: flex;
+}
+
+section.landing #typography .buttons button {
+    color: white;
+    padding: 13px 27px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+section.landing #typography .buttons button:first-child {
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+}
+
+section.landing #typography .buttons button:last-child {
+    background-color: transparent;
+    font-weight: 200;
+    margin-left: 30px;
+}
+
+section.landing #image-landing {
+    margin-right: 70px;
+    text-align: center;
+}
+
+section.landing #image-landing p {
+    color: var(--white-45);
+    margin-top: 65px;
+}
+
+section.landing #image-landing img {
+    width: 615px;
+    width: 525px;
+}
+
+section.company-logos {
+    padding-top: 50px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--secondary-bg);
+}
+
+section.company-logos p.data {
+    font-weight: var(--font-medium);
+    color: #7E7E7E;
+}
+
+section.company-logos #logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.company-logos #logos img {
+    opacity: .6;
+    width: 230px;
+    height: 230px;
+}
+
+section.crypto-price {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 180px;
+    margin-bottom: 345px;
+}
+
+section.crypto-price #typography {
+    margin-right: 150px;
+}
+
+section.crypto-price #typography h3 {
+    font-size: 70px;
+    color: white;
+}
+
+section.crypto-price #typography p {
+    margin-top: 25px;
+    color: var(--white-45);
+}
+
+section.crypto-price #typography button {
+    cursor: pointer;
+    margin-top: 260px;
+    padding: 14px 45px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    font-weight: medium;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+}
+
+section.crypto-price .ornament-crypto-price {
+    position: absolute;
+    top: 0;
+    right: -570px;
+    width: 1163px;
+    height: 952px;
+    z-index: -1;
+    background-image: url('../assets/ornament-right-side.svg');
+}
+
+section.coin-lists {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 305px;
+}
+
+section.coin-lists img {
+    order: 2;
+}
+
+section.coin-lists #typography {
+    margin-left: 137px;
+    order: 1;
+}
+
+section.coin-lists #typography h3 {
+    font-size: 70px;
+    color: var(--white);
+}
+
+section.coin-lists #typography p {
+    margin-top: 25px;
+    color: var(--white-45);
+}
+
+section.coin-lists #typography button {
+    cursor: pointer;
+    margin-top: 260px;
+    padding: 14px 45px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    font-weight: medium;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+}
+
+section.coin-lists .ornament-crypto-price {
+    position: absolute;
+    width: 1163px;
+    height: 952px;
+    left: -540px;
+    top: -100px;
+    z-index: -1;
+    background-image: url('../assets/ornament-left-side.svg');
+    background-repeat: no-repeat;
+}
+
+section.exchanges {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 540px;
+}
+
+section.exchanges #typography {
+    margin-right: 150px;
+}
+
+section.exchanges #typography h3 {
+    color: var(--white);
+    font-size: 70px;
+}
+
+section.exchanges #typography p {
+    color: var(--white-45);
+}
+
+section.exchanges #typography button {
+    cursor: pointer;
+    margin-top: 260px;
+    padding: 14px 45px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    font-weight: medium;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+}
+
+section.exchanges .ornament-exchanges {
+    width: 1163px;
+    height: 952px;
+    position: absolute;
+    right: -570px;
+    top: -40px;
+    z-index: -1;
+    background-image: url('../assets/ornament-right-side.svg');
+}
+
+section.get-started {
+    position: relative;
+    text-align: center;
+    margin-bottom: 608px;
+}
+
+section.get-started h3 {
+    font-size: 70px;
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+section.get-started button {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 20px;
+    padding: 14px 27px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+}
+
+section.get-started .ornament-kiri {
+    width: 1163px;
+    height: 952px;
+    position: absolute;
+    top: -260px;
+    left: -340px;
+    z-index: -1;
+    background-image: url('../assets/ornament-left-side.svg');
+    background-repeat: no-repeat;
+}
+
+section.get-started .ornament-kanan {
+    width: 1075px;
+    height: 880px;
+    position: absolute;
+    top: 220px;
+    right: -300px;
+    z-index: -1;
+    background-image: url('../assets/ornament-right-side.svg');
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 60px 0;
+    box-sizing: border-box;
+    background-color: var(--secondary-bg);
+}
+
+footer .foot {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .foot #logo img {
+    width: 259px;
+    cursor: pointer;
+}
+
+footer .foot #logo p {
+    margin-top: 103.5px;
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--white-45);
+}
+
+footer .foot #content {
+    display: flex;
+}
+
+footer .foot #content .development-tools,
+footer .foot #content .developer,
+footer .foot #content .design-tools {
+    color: var(--white);
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .foot #content .development-tools a,
+footer .foot #content .developer a,
+footer .foot #content .design-tools a {
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: 200;
+    color: white;
+} 
+
+footer .foot #content .development-tools,
+footer .foot #content .developer {
+    margin-right: 100px;
+}
+
+footer .foot #content div .list a{
+    display: block;
+}
