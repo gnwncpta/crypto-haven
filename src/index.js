@@ -1,4 +1,3 @@
-import './index.css';
-import eventLogoClick from './home';
+import Home from './home';
 
-eventLogoClick();
+Home();

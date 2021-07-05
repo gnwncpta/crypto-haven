@@ -1,11 +1,23 @@
+import './home.css';
 import anime from "animejs/lib/anime.es.js";
 
 const logo = document.querySelector('header img');
 const disclaimer = document.querySelector('#disc');
 const blackScreen = document.querySelector('.black');
-const getStartedBtn = document.querySelector('button.get-started');
+const imageLanding = document.querySelector('section.landing #image-landing img');
 
 function Home(){
+
+    anime({
+        targets: imageLanding,
+        keyframes: [
+            {translateY: -30},
+            {translateY: 30}
+        ],
+        duration: 2000,
+        loop: true,
+        easing: 'easeInOutQuad'
+    });
 
     if(localStorage.getItem('disclaimer') == null){
         document.body.classList.toggle('freeze');
@@ -27,16 +39,6 @@ function Home(){
             localStorage.setItem('disclaimer', 'Ever');
         }
     });
-
-    getStartedBtn.addEventListener('mouseenter', () => {
-        anime({
-            target: getStartedHome,
-            translateY: '100px',
-            direction: 'alternate',
-            easing: 'easeInOutExpo'
-        });
-    });
-
 
     logo.addEventListener('click', () => {
         window.location.href = './index.html';
