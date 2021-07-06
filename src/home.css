@@ -33,6 +33,14 @@
     display: none;
 }
 
+.grid {
+    display: grid;
+}
+
+.rotate-330 {
+    transform: rotate(330deg);
+}
+
 div#hamburger-menu {
     display: none;
 
@@ -115,9 +123,9 @@ section#first-look .ornament-first-look { /* ornament */
     height: 880px;
     position: absolute;
     top: 180px;
-    left: -160px;
+    left: -190px;
     z-index: -1;
-    background: url('../assets/ornament-left-side.svg');
+    background: url('../dist/assets/ornament-left-side.svg');
 }
 
 header {
@@ -208,7 +216,7 @@ section.landing #image-landing p {
 }
 
 section.landing #image-landing img {
-    width: 615px;
+    width: 100%;
     width: 525px;
     transition: .8s ease-out;
 }
@@ -251,7 +259,12 @@ section.crypto-price {
     margin-bottom: 345px;
 }
 
+section.crypto-price img {
+    width: 45%;
+}
+
 section.crypto-price #typography {
+    margin-left: 94px;
     margin-right: 150px;
 }
 
@@ -286,7 +299,7 @@ section.crypto-price .ornament-crypto-price {
     width: 1163px;
     height: 952px;
     z-index: -1;
-    background-image: url('../assets/ornament-right-side.svg');
+    background-image: url('../dist/assets/ornament-right-side.svg');
 }
 
 section.coin-lists {
@@ -298,11 +311,13 @@ section.coin-lists {
 }
 
 section.coin-lists img {
+    width: 45%;
     order: 2;
 }
 
 section.coin-lists #typography {
     margin-left: 137px;
+    margin-right: 94px;
     order: 1;
 }
 
@@ -337,7 +352,7 @@ section.coin-lists .ornament-coin-lists {
     left: -540px;
     top: -100px;
     z-index: -1;
-    background-image: url('../assets/ornament-left-side.svg');
+    background-image: url('../dist/assets/ornament-left-side.svg');
     background-repeat: no-repeat;
 }
 
@@ -349,7 +364,12 @@ section.exchanges {
     margin-bottom: 540px;
 }
 
+section.exchanges img {
+    width: 45%;
+}
+
 section.exchanges #typography {
+    margin-left: 94px;
     margin-right: 150px;
 }
 
@@ -383,7 +403,7 @@ section.exchanges .ornament-exchanges {
     right: -570px;
     top: -40px;
     z-index: -1;
-    background-image: url('../assets/ornament-right-side.svg');
+    background-image: url('../dist/assets/ornament-right-side.svg');
 }
 
 section.get-started {
@@ -417,7 +437,7 @@ section.get-started .ornament-kiri {
     top: -260px;
     left: -340px;
     z-index: -1;
-    background-image: url('../assets/ornament-left-side.svg');
+    background-image: url('../dist/assets/ornament-left-side.svg');
     background-repeat: no-repeat;
 }
 
@@ -428,7 +448,7 @@ section.get-started .ornament-kanan {
     top: 220px;
     right: -300px;
     z-index: -1;
-    background-image: url('../assets/ornament-right-side.svg');
+    background-image: url('../dist/assets/ornament-right-side.svg');
     background-repeat: no-repeat;
 }
 
@@ -552,7 +572,7 @@ footer .foot #content div .list a{
     section#first-look .ornament-first-look {
         top: 150px;
         left: -270px;
-        background-image: url('../assets/ornament-landing-tablet.svg');
+        background-image: url('../dist/assets/ornament-landing-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -560,7 +580,7 @@ footer .foot #content div .list a{
         top: 600px;
         right: -180px;
         position: absolute;
-        background-image: url('../assets/2-line-tablet.svg');
+        background-image: url('../dist/assets/2-line-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -612,7 +632,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: -60px;
         right: -350px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -648,7 +668,7 @@ footer .foot #content div .list a{
         height: 527px;
         left: -310px;
         top: -70px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     
@@ -683,7 +703,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: -40px;
         right: -310px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     /* Section Get Started Now */
@@ -701,7 +721,7 @@ footer .foot #content div .list a{
     section.get-started .ornament-kiri {
         width: 664px;
         height: 527px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -711,7 +731,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: -260px;
         left: -200px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     section.get-started .ornament-kanan {
@@ -719,7 +739,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: 200px;
         right: -250px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -822,7 +842,7 @@ footer .foot #content div .list a{
     section#first-look .ornament-first-look {
         top: 150px;
         left: -270px;
-        background-image: url('../assets/ornament-landing-tablet.svg');
+        background-image: url('../dist/assets/ornament-landing-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -830,7 +850,7 @@ footer .foot #content div .list a{
         top: 900px;
         right: -180px;
         position: absolute;
-        background-image: url('../assets/2-line-tablet.svg');
+        background-image: url('../dist/assets/2-line-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -883,7 +903,7 @@ footer .foot #content div .list a{
         height: 492px;
         top: -60px;
         right: -350px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -919,7 +939,7 @@ footer .foot #content div .list a{
         height: 527px;
         left: -430px;
         top: -70px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     
@@ -958,7 +978,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: -40px;
         right: -430px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     /* Section Get Started Now */
@@ -983,7 +1003,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: -260px;
         left: -350px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     section.get-started .ornament-kanan {
@@ -991,7 +1011,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: 200px;
         right: -350px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -1025,10 +1045,17 @@ footer .foot #content div .list a{
     
 }
 
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
 @media (min-width: 320px) and (max-width: 425px) {
 
     div#hamburger-menu {
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: space-around;
     }
@@ -1040,10 +1067,79 @@ footer .foot #content div .list a{
 
     header {
         padding: 35px 0;
+        position: relative;
+    }
+
+    @keyframes animate-down {
+        0% {
+            top: -90vw
+        }
+
+        100% {
+            top: 50vw;
+        }
     }
 
     header nav {
+        width: 100%;
+        padding: 30px 5px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50vw;
+        left: 0;
+        border-radius: 20px;
+        background-color: white;
         display: none;
+        place-items: center;
+        z-index: 2;
+        animation: animate-down 1s ease-in-out;
+    }
+
+    header nav a {
+        color: #111;
+        display: block;
+        margin: 30px;
+    }
+
+    div#hamburger-menu {
+        z-index: 2;
+    }
+
+    div#hamburger-menu .first {
+        transform-origin: 25% 70%;
+    }
+
+    div#hamburger-menu .last {
+        transform-origin: 25% 70%;
+    }
+
+    div#hamburger-menu div {
+        transition: 1s ease-in-out;
+        opacity: 1;
+    }
+
+    div#hamburger-menu .first.miring-first {
+        margin-left: 5px;
+        transform: rotate(40deg);
+    }
+    @keyframes animate-fade {
+        0%{
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    div#hamburger-menu .middle.hidden {
+        opacity: 0;
+        transform: translateX(300px);
+        animation: animate-fade 1s ease-in-out;
+    }
+    div#hamburger-menu .last.miring-last {
+        margin-left: 5px;
+        transform: rotate(-40deg);
     }
 
     section#first-look {
@@ -1082,7 +1178,7 @@ footer .foot #content div .list a{
     }
 
     section.landing #image-landing img {
-        width: 366px;
+        width: 344px;
         height: 312px;
     }
 
@@ -1092,8 +1188,8 @@ footer .foot #content div .list a{
 
     section#first-look .ornament-first-look {
         top: 150px;
-        left: -270px;
-        background-image: url('../assets/ornament-landing-tablet.svg');
+        left: -350px;
+        background-image: url('../dist/assets/ornament-landing-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -1101,7 +1197,7 @@ footer .foot #content div .list a{
         top: 900px;
         right: -180px;
         position: absolute;
-        background-image: url('../assets/2-line-tablet.svg');
+        background-image: url('../dist/assets/2-line-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -1114,8 +1210,8 @@ footer .foot #content div .list a{
 
     section.company-logos #logos img {
         margin-top: 20px;
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
     }
 
     section.company-logos #logos p.data {
@@ -1132,11 +1228,12 @@ footer .foot #content div .list a{
     }
 
     section.crypto-price img {
-        width: 350px;
+        width: 100%;
         height: 352px;
     }
 
     section.crypto-price #typography {
+        margin-left: 0px;
         margin-top: 40px;
         margin-right: 0px;
     }
@@ -1162,7 +1259,7 @@ footer .foot #content div .list a{
         height: 492px;
         top: 380px;
         right: -350px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -1174,7 +1271,7 @@ footer .foot #content div .list a{
     }
 
     section.coin-lists img {
-        width: 350px;
+        width: 100%;
         height: 352px;
         order: 1;
     }
@@ -1206,8 +1303,8 @@ footer .foot #content div .list a{
         width: 644px;
         height: 527px;
         left: -430px;
-        top: -70px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        top: 380px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     
@@ -1219,11 +1316,12 @@ footer .foot #content div .list a{
     }
 
     section.exchanges img {
-        width: 350px;
+        width: 100%;
         height: 352px;
     }
 
     section.exchanges #typography {
+        margin-left: 0px;
         margin-top: 40px;
         margin-right: 0px;
     } 
@@ -1247,9 +1345,9 @@ footer .foot #content div .list a{
     section.exchanges .ornament-exchanges {
         width: 644px;
         height: 527px;
-        top: -40px;
+        top: 380px;
         right: -430px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     /* Section Get Started Now */
@@ -1274,7 +1372,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: -200px;
         left: -400px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
     }
 
     section.get-started .ornament-kanan {
@@ -1282,7 +1380,7 @@ footer .foot #content div .list a{
         height: 527px;
         top: 130px;
         right: -480px;
-        background-image: url('../assets/ornament-section-tablet.svg');
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
         background-repeat: no-repeat;
     }
 
@@ -1290,7 +1388,13 @@ footer .foot #content div .list a{
     /* Footer Section */
     footer .foot {
         padding: 10px;
-        border: 1px solid red;
+    }
+
+    footer .foot #logo {
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     footer .foot #logo img {
@@ -1298,11 +1402,12 @@ footer .foot #content div .list a{
     }
 
     footer .foot #logo p {
+        margin-top: 0px;
         font-size: 12px;
     }
 
     footer .foot #content {
-        border: 1px solid red;
+        margin-left: 30px;
         align-items: flex-start;
         flex-direction: column;
         justify-content: space-between;
@@ -1310,7 +1415,6 @@ footer .foot #content div .list a{
 
     footer .foot #content div .list {
         margin-top: 5px;
-        border: 1px solid red;
     }
 
     footer .foot #content .developer,
