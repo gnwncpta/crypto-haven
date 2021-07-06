@@ -1,3 +1,6 @@
+'use strict';
+
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
 
 const webpack = {
@@ -12,7 +15,19 @@ const webpack = {
             {test: /\.css$/, use: ['style-loader', 'css-loader']},
             {test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset/resource'}
         ]
-    }
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000
+    },
+    plugins: [
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            server: {baseDir: ['dist']}
+        })
+    ]
 }
 
 module.exports = webpack;

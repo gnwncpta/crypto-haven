@@ -1,10 +1,15 @@
 import './home.css';
 import anime from "animejs/lib/anime.es.js";
 
+const nav = document.querySelector('nav');
 const logo = document.querySelector('header img');
 const disclaimer = document.querySelector('#disc');
 const blackScreen = document.querySelector('.black');
 const imageLanding = document.querySelector('section.landing #image-landing img');
+const hamburgerMenu = document.querySelector('div#hamburger-menu');
+const firstLine = document.querySelector('div#hamburger-menu .first');
+const middleLine = document.querySelector('div#hamburger-menu .middle');
+const lastLine = document.querySelector('div#hamburger-menu .last');
 
 function Home(){
 
@@ -39,6 +44,16 @@ function Home(){
             localStorage.setItem('disclaimer', 'Ever');
         }
     });
+
+    hamburgerMenu.addEventListener('click', () => {
+        document.body.classList.toggle('freeze');
+        blackScreen.classList.toggle('hidden');
+        nav.classList.toggle('grid');
+
+        firstLine.classList.toggle('miring-first');
+        middleLine.classList.toggle('hidden');
+        lastLine.classList.toggle('miring-last')
+    })
 
     logo.addEventListener('click', () => {
         window.location.href = './index.html';
