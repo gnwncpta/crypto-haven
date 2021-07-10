@@ -1,8 +1,9 @@
 <img src="https://i.imgur.com/vkUfAYR.png" width="150px">
 
 # Crypto Haven
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository)
 A Web Fetch Crypto's Price
+
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository)
 
 
 Tech:
