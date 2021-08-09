@@ -5,9 +5,12 @@ const path = require('path');
 
 const webpack = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        cryptoPrice: './src/cryptoPrice.js'
+    },
     output: {
-        filename: 'index.bundled.js',
+        filename: '[name].bundled.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
